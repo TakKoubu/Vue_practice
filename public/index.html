@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  </head>
+  <body>
+    <!-- App.vue -->
+    <v-app>
+      <v-navigation-drawer app>
+        <!-- -->
+      </v-navigation-drawer>
+
+      <v-app-bar
+        app
+        color=""
+        flat
+      >
+        <v-avatar
+          :color="$vuetify.breakpoint.smAndDown ? 'grey darken-1' : 'transparent'"
+          size="32"
+        ></v-avatar>
+
+        <v-tabs
+          centered
+          class="ml-n9"
+          color="grey darken-1"
+        >
+          <v-tab
+            v-for="link in links"
+            :key="link"
+          >
+            {{ link }}
+          </v-tab>
+        </v-tabs>
+
+        <v-avatar
+          class="hidden-sm-and-down"
+          color="grey darken-1 shrink"
+          size="32"
+        ></v-avatar>
+      </v-app-bar>
+
+      <!-- アプリケーションのコンポーネントに基づいてコンテンツのサイズを決定 -->
+      <v-main>
+
+        <!-- アプリケーションに適切なgutterを提供 -->
+        <v-container fluid>
+
+          <!-- vue-routerを使用する場合 -->
+          <router-view></router-view>
+        </v-container>
+      </v-main>
+
+      <v-footer app>
+        <!-- -->
+      </v-footer>
+    </v-app>
+  </body>
+</html>
+
