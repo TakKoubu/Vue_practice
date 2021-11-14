@@ -11,7 +11,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   routes: [
     {
-      path: '/home',
+      path: '/',
       component: {
         template: '<div>Homeです</div>'
       }

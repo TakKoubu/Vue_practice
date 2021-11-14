@@ -12,7 +12,7 @@
             class="ml-n9"
             color="grey darken-1"
           >
-            <v-tab to="/" exact>HOME</v-tab>
+            <v-tab to="/">HOME</v-tab>
             <v-tab to="/profile">PROFILE</v-tab>
             <v-tab to="/skill">SKILL</v-tab>
             <v-tab to="/work">WORK</v-tab>
