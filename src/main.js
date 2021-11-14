@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: {
         template: '<div>Homeです</div>'
       }
