@@ -4,7 +4,18 @@ import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
+var router = new VueRouter(
+  {
+  routes: [
+    path: '/home',
+    component: {
+      template: '<div>Homeです</div>'
+    }
+  ]
+})
+
 new Vue({
   vuetify,
+  router: router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#inspire')

@@ -1,60 +1,44 @@
-<template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+<!-- App.vue -->
+    <template>
+      <v-app id="inspire">
+        <v-app-bar
+          app
+          color="white"
+          flat
+        >
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+          <v-tabs
+            centered
+            class="ml-n9"
+            color="grey darken-1"
+          >
+            <v-tab
+              v-for="link in links"
+              :key="link"
+            >
+              {{ link }}
+            </v-tab>
+          </v-tabs>
+        </v-app-bar>
 
-      <v-spacer></v-spacer>
+        <v-main class="grey lighten-3">
+          <v-container>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+          </v-container>
+        </v-main>
+      </v-app>
+    </template>
 
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld';
-
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
-};
-</script>
+    <script>
+      export default {
+        data: () => ({
+          links: [
+            "<router-link to="/home">HOME"</router-link>,
+            "PROFILE",
+            "SKILL",
+            "WORK",
+            "CONTACT",
+          ],
+        }),
+      }
+    </script>
