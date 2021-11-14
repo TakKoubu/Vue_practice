@@ -29,16 +29,16 @@
       </v-app>
     </template>
 
-    <script>
-      export default {
-        data: () => ({
-          links: [
-            '<router-link to="/home">HOME</router-link>',
-            "PROFILE",
-            "SKILL",
-            "WORK",
-            "CONTACT",
-          ],
-        }),
-      }
-    </script>
+<script>
+export default {
+  data: () => ({
+    links: [
+      '<router-link to="/home">HOME</router-link>',
+      'PROFILE',
+      'SKILL',
+      'WORK',
+      'CONTACT'
+    ]
+  })
+}
+</script>
