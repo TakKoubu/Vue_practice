@@ -12,13 +12,13 @@
             class="ml-n9"
             color="grey darken-1"
           >
-            <v-tab
-              v-for="link in links"
-              :key="link"
-            >
-              {{ link }}
-            </v-tab>
+            <v-tab to="/" exact>HOME</v-tab>
+            <v-tab to="/profile">PROFILE</v-tab>
+            <v-tab to="/skill">SKILL</v-tab>
+            <v-tab to="/work">WORK</v-tab>
+            <v-tab to="/contact">CONTACT</v-tab>
           </v-tabs>
+
         </v-app-bar>
 
         <v-main class="grey lighten-3">
@@ -32,13 +32,7 @@
 <script>
 export default {
   data: () => ({
-    links: [
-      '<router-link to="/home">HOME</router-link>',
-      'PROFILE',
-      'SKILL',
-      'WORK',
-      'CONTACT'
-    ]
+
   })
 }
 </script>
