@@ -1,15 +1,19 @@
+import { hasOwnMetadata } from 'core-js/fn/reflect'
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
 
-var router = new VueRouter(
-  {
+Vue.use(VueRouter)
+
+var router = new VueRouter({
   routes: [
-    path: '/home',
-    component: {
-      template: '<div>Homeです</div>'
+    {
+      path: '/',
+      component: {
+        template: '<div>Homeです</div>'
+      }
     }
   ]
 })

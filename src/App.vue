@@ -33,7 +33,7 @@
       export default {
         data: () => ({
           links: [
-            "<router-link to="/home">HOME"</router-link>,
+            '<router-link to="/">HOME</router-link>',
             "PROFILE",
             "SKILL",
             "WORK",
