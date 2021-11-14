@@ -1,7 +1,8 @@
-import { hasOwnMetadata } from 'core-js/fn/reflect'
+// import { hasOwnMetadata } from 'core-js/fn/reflect'
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
+import VueRouter from 'vue-router'
 
 Vue.config.productionTip = false
 
