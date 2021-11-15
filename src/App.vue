@@ -29,6 +29,24 @@
       </v-app>
     </template>
 
+    <style  lang="scss" scoped>
+      .home-content {
+        background: url("./assets/img/home.jpg");
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 50vh;
+
+        &-text {
+          color: white;
+          text-align: center;
+          font-size: 28px;
+          font-weight: bold;
+
+        }
+      }
+      </style>
+
 <script>
 export default {
   data: () => ({
