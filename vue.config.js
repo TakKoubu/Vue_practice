@@ -1,10 +1,6 @@
 module.exports = {
+  runtimeCompiler: true,
   transpileDependencies: [
     'vuetify'
-  ],
-  resolve: {
-    alias: {
-       vue: 'vue/dist/vue.js'
-    }
-  }
+  ]
 }

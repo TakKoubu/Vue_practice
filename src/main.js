@@ -13,7 +13,7 @@ var router = new VueRouter({
     {
       path: '/',
       component: {
-        template: '<div>Homeです</div>'
+        template: '<div><p class="font-weight-medium text-center text-sm-h2">Welcome to my portfolio page!!</p></div>'
       }
     }
   ]
