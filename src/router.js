@@ -6,7 +6,6 @@ import Skill from './components/Skill.vue'
 import Work from './components/Work.vue'
 import Contact from './components/Contact.vue'
 
-
 Vue.use(Router)
 
 export default new Router({
