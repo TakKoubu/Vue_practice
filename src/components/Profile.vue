@@ -16,7 +16,7 @@
         >
           <v-list-item three-line>
             <v-list-item-content>
-              <v-list-item-title class="text-h5 pb-2">
+              <v-list-item-title class="text-h5 pb-3">
                 <div>こくぶ</div>
               </v-list-item-title>
               <v-divider></v-divider>
@@ -30,8 +30,8 @@
             </v-list-item-content>
           </v-list-item>
            <v-card-actions>
-            <router-link to="/skill" tag="button">保有スキル</router-link>
-            <button @click="$router.push('work')">実績・制作物</button>
+            <v-btn to=skill>保有スキル</v-btn>
+            <v-btn to=work>実績・制作物</v-btn>
           </v-card-actions>
         </v-card>
       </div>
