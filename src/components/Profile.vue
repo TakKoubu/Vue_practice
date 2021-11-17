@@ -30,8 +30,8 @@
             </v-list-item-content>
           </v-list-item>
            <v-card-actions>
-            <v-btn to=skill>保有スキル</v-btn>
-            <v-btn to=work>実績・制作物</v-btn>
+            <v-btn to=skill><font-awesome-icon icon="wrench" />保有スキル</v-btn>
+            <v-btn to=work><font-awesome-icon icon="apple-alt" />実績・制作物</v-btn>
           </v-card-actions>
         </v-card>
       </div>

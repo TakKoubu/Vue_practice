@@ -5,10 +5,11 @@ import vuetify from './plugins/vuetify'
 import router from './router'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faWrench, faAppleAlt } from '@fortawesome/free-solid-svg-icons'
+import { faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faCoffee)
+library.add(faCoffee, faWrench, faAppleAlt, faVuejs)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
