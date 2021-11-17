@@ -17,9 +17,7 @@
             </v-list-item-content>
           </v-list-item>
           <v-card-actions>
-            <font-awesome-icon :icon="['fab', 'github']" size="2x" color="black"/>
-            <font-awesome-icon icon="fa-github-square" />
-            <v-btn to=skill class="pa-6"><font-awesome-icon icon="github-square" />GITHUB</v-btn>
+            <v-btn href="https://github.com/TakKoubu" color="white" border="none" background="transparent"><font-awesome-icon :icon="['fab', 'github-square']" size="3x" color="black"/>GITHUB</v-btn>
           </v-card-actions>
         </v-card>
       </div>
