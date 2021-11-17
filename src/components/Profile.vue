@@ -5,7 +5,6 @@
         <v-avatar size="350" width="85%">
           <img
             src="../assets/img/cat.jpg"
-            alt="John"
           >
         </v-avatar>
       </div>
