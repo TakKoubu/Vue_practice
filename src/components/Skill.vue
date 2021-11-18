@@ -1,6 +1,5 @@
 <template>
   <section class="skill">
-
     <v-card class="mt-13">
       <v-card-title>Languages</v-card-title>
       <v-divider></v-divider>
@@ -95,6 +94,20 @@
           ></v-rating>
         </div>
         <div class="col-3 text-center">
+          <h3>jQuery</h3>
+          <img src="../assets/img/jquery.png" height="45px" width="45px">
+          <v-rating
+            background-color="glay"
+            color="black"
+            hover
+            length="5"
+            rating="2"
+            size="20"
+            value="2"
+            readonly
+          ></v-rating>
+        </div>
+        <div class="col-3 text-center">
           <h3>Rails</h3>
           <img src="../assets/img/rails.png" height="45px" width="45px">
           <v-rating
@@ -142,8 +155,8 @@
           ></v-rating>
         </div>
         <div class="col-3 text-center">
-          <h3>Git</h3>
-          <font-awesome-icon :icon="['fab', 'git']" size="3x" color="black"/>
+          <h3>AWS</h3>
+          <font-awesome-icon :icon="['fab', 'aws']" size="3x" color="black"/>
           <v-rating
             background-color="glay"
             color="black"

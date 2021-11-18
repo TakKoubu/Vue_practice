@@ -21,7 +21,7 @@
 
         </v-app-bar>
 
-        <v-main class="grey lighten-3 home-content">
+        <v-main class="grey lighten-3 home-content pb-20">
           <v-container>
             <router-view></router-view>
           </v-container>
@@ -31,11 +31,12 @@
 
     <style  lang="scss" scoped>
       .home-content {
-        background: url("./assets/img/home.jpg");
+        background: url(./assets/img/home.jpg) repeat;
         background-size: cover;
         background-position: center center;
+        background-repeat: repeat-y;
         width: 100%;
-        height: 50vh;
+        height: 100%;
 
         &-text {
           color: white;
